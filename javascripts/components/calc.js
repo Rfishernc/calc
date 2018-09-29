@@ -1,22 +1,6 @@
-function writeToDom(div, string) {
-    document.getElementById(div).innerHTML = string;
-}
+import {writeToDom} from '../helpers/util.js';
 
-function multiply(n1, n2) {
-    return n1 * n2;
-}
-
-function divide(n1, n2) {
-    return n1 / n2;
-}
-
-function add(n1, n2) {
-    return n1 + n2;
-}
-
-function subtract(n1, n2) {
-    return n1 - n2;
-}
+import {multiply, divide, add, subtract} from '../helpers/math.js';
 
 function calc(num1, num2, operator) {
     let answer;
@@ -29,3 +13,5 @@ function calc(num1, num2, operator) {
     }
     writeToDom('result', answer); 
 }
+
+export {calc};
