@@ -1,3 +1,9 @@
-import {calc} from './components/calc.js';
+import {numberButt, operatorButt, equalsButt} from './helpers/buttevents.js';
 
-calc(5, 8, 'multiply');
+function initApp() {
+    numberButt();
+    operatorButt();
+    equalsButt();
+}
+
+initApp();
